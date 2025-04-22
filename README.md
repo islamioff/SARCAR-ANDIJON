@@ -1,1 +1,0 @@
-# SARCAR-ANDIJON
