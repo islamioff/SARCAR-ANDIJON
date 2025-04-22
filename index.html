@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avtomobillar ijarasi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f1f4f9;
+      padding: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .car-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    .car-card:hover {
+      transform: scale(1.02);
+    }
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .car-info {
+      padding: 15px;
+    }
+    .car-info h3 {
+      margin: 0 0 10px;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+    .details-button {
+      background: #007bff;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .car-details {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<h1 style="text-align:center; margin-bottom:30px;">Avtomobillar Ijarasi</h1>
+<div class="container">
+
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/1-mashida (Changan ben ben oq).png" alt="Changan Ben Ben E-Star (Oq)">
+      <div class="car-info">
+        <h3>Changan Ben Ben E-Star (Oq)</h3>
+        <p class="price">Ijaraga 300,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-1')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-1">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 200-250 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 30-40 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/2-mashida (Changan ben ben pushti).png" alt="Changan Ben Ben E-Star (Pushti)">
+      <div class="car-info">
+        <h3>Changan Ben Ben E-Star (Pushti)</h3>
+        <p class="price">Ijaraga 300,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-2')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-2">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 200-250 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 30-40 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/3-mashida (Geometry E 401 Oq).png" alt="Geometry E 401 Pili (Oq)">
+      <div class="car-info">
+        <h3>Geometry E 401 Pili (Oq)</h3>
+        <p class="price">Ijaraga 400,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-3')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-3">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 250-300 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 40-60 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/4-mashida (BYD Qin EV Standart Oq).png" alt="BYD Qin EV Standart (Oq)">
+      <div class="car-info">
+        <h3>BYD Qin EV Standart (Oq)</h3>
+        <p class="price">Ijaraga 500,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-4')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-4">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 300-350 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 50-60 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/5-mashida (Chevrolet Menlo Oq).png" alt="Chevrolet Menlo (Oq)">
+      <div class="car-info">
+        <h3>Chevrolet Menlo (Oq)</h3>
+        <p class="price">Ijaraga 500,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-5')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-5">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 300-350 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 50-60 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/6-mashida (Kaiyi X3 Pro Oq).png" alt="Kaiyi X3 Pro (Oq)">
+      <div class="car-info">
+        <h3>Kaiyi X3 Pro (Oq)</h3>
+        <p class="price">Ijaraga 500,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-6')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-6">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 250-300 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 50-60 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/7-mashida (Geometr A Pro Oq).png" alt="Geometr A Pro (Oq)">
+      <div class="car-info">
+        <h3>Geometr A Pro (Oq)</h3>
+        <p class="price">Ijaraga 600,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-7')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-7">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 350-400 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 60-70 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/8-mashida (Honda ENS 1 Ko‘k).png" alt="Honda ENS 1 (Ko‘k)">
+      <div class="car-info">
+        <h3>Honda ENS 1 (Ko‘k)</h3>
+        <p class="price">Ijaraga 700,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-8')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-8">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 350-400 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 60-70 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/9-mashida (Honda ENP 1 Qora).png" alt="Honda ENP 1 (Qora)">
+      <div class="car-info">
+        <h3>Honda ENP 1 (Qora)</h3>
+        <p class="price">Ijaraga 700,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-9')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-9">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 350-400 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 60-70 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/10-mashida (Volkswagen ID 4 Kulrang).png" alt="Volkswagen ID 4 (Kulrang)">
+      <div class="car-info">
+        <h3>Volkswagen ID 4 (Kulrang)</h3>
+        <p class="price">Ijaraga 800,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-10')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-10">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 300-350 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 60-70 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/11-mashida (Volkswagen ID 4 Ko'k).png" alt="Volkswagen ID 4 (Ko‘k)">
+      <div class="car-info">
+        <h3>Volkswagen ID 4 (Ko‘k)</h3>
+        <p class="price">Ijaraga 800,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-11')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-11">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 400-450 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 70-80 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="car-card">
+      <img src="mashinalar_rasmlari/12-mashida (Toyota BZ 4X Kulrang).png" alt="Toyota BZ 4X (Kulrang)">
+      <div class="car-info">
+        <h3>Toyota BZ 4X (Kulrang)</h3>
+        <p class="price">Ijaraga 800,000 so'm</p>
+        <button class="details-button" onclick="toggleDetails('details-12')">Qo‘shimcha ma’lumot</button>
+        <div class="car-details" id="details-12">
+          <p><strong>Batareya sig‘imi:</strong> 70 kWh</p>
+          <p><strong>Masofa:</strong> 450-500 km</p>
+          <p><strong>Motor:</strong> Elektr motor</p>
+          <p><strong>Yili:</strong> 2023</p>
+          <p><strong>Transmissiya:</strong> Avtomat</p>
+          <p><strong>Quvvatlash vaqti:</strong> 90-100 daqiqa</p>
+        </div>
+      </div>
+    </div>
+    
+</div>
+<script>
+  function toggleDetails(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+</body>
+</html>
